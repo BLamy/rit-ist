@@ -6,8 +6,7 @@
   flex-wrap: nowrap;
   text-align: center;
 }
-
-#GraduateDegrees>div>div {
+#GraduateDegrees>div>a {
   width: calc(33% - 50px);
   padding: 25px;
   margin: 25px;
