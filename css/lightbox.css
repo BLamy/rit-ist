@@ -12,13 +12,14 @@
   background-color: rgba(0, 0 , 0, .3);
 }
 #LightBox div.inner {
+  overflow-y: scroll;
   text-align: center;
   padding: 20px;
   background-color: white;
   width: 80%;
-  min-height: 200px;
-  margin: 0 auto;
+  max-height: 80%;
+  margin: auto;
   position: relative;
   top: 50%;
-  transition: translateY(-50%);
+  transform: translateY(-50%);
 }

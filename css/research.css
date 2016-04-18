@@ -11,7 +11,7 @@
   font-weight: bold;
   margin-left: 5%;
 }
-#ResearchFaculty>div>div {
+#ResearchFaculty>div>a {
   height: 12.2vw;
   width: 12.2vw;
 }
@@ -19,7 +19,7 @@
   width: 100%;
   height: 100%;
 }
-#ResearchAreas>div>div {
+#ResearchAreas>div>a {
   height: 13.2vw;
   width: 13.2vw;
   margin: 1%;
@@ -40,7 +40,7 @@
   margin-top:10px;
 }
 
-#ResearchAreas>div>div:after {
+#ResearchAreas>div>a:after {
   content: '\0020';
   display: block;
   margin-top: 56.25%; /* 16:9 aspect */
@@ -48,72 +48,72 @@
 #ResearchAreas i.analytics:before {
   content: "\f260";/*fa-gg*/
 }
-#ResearchAreas div.analytics {
+#ResearchAreas a.analytics {
   background-color: #F4B350;
 }
 #ResearchAreas i.database:before {
   content: "\f1c0";/*fa-database*/
 }
-#ResearchAreas div.database {
+#ResearchAreas a.database {
   background-color: #22313F;
 }
 #ResearchAreas i.education:before {
   content: "\f044";/*fa-pencil-square-o*/
 }
-#ResearchAreas div.education {
+#ResearchAreas a.education {
   background-color: #F64747;
 }
 #ResearchAreas i.geo:before {
   content: "\f041";/*fa-map-marker*/
 }
-#ResearchAreas div.geo {
+#ResearchAreas a.geo {
   background: #E08283
 }
 #ResearchAreas i.hci:before {
   content: "\f007";/*fa-user*/
 }
-#ResearchAreas div.hci {
+#ResearchAreas a.hci {
   background: #3498DB
 }
 #ResearchAreas i.health-informatics:before {
   content: "\f21e";/*fa-heartbeat*/
 }
-#ResearchAreas div.health-informatics {
+#ResearchAreas a.health-informatics {
   background: #019875
 }
 #ResearchAreas i.mobile:before {
   content: "\f10b";/*fa-mobile*/
 }
-#ResearchAreas div.mobile {
+#ResearchAreas a.mobile {
   background: #6C7A89
 }
 #ResearchAreas i.networking:before {
   content: "\f0e8";/*fa-sitemap*/
 }
-#ResearchAreas div.networking {
+#ResearchAreas a.networking {
   background: #68C3A3
 }
 #ResearchAreas i.programming:before {
   content: "\f016";/*fa-file-o*/
 }
-#ResearchAreas div.programming {
+#ResearchAreas a.programming {
   background-color: #F2784B;
 }
 #ResearchAreas i.system-administration:before {
   content: "\f233";/*fa-server*/
 }
-#ResearchAreas div.system-administration {
+#ResearchAreas a.system-administration {
   background-color: #3A539B;
 }
 #ResearchAreas i.ubiquitous-computing:before {
   content: "\f152";/*fa-caret-square-o-right*/
 }
-#ResearchAreas div.ubiquitous-computing {
+#ResearchAreas a.ubiquitous-computing {
   background-color: #34495E;
 }
 #ResearchAreas i.web:before {
   content: "\f247";/*fa-object-group*/
 }
-#ResearchAreas div.web {
+#ResearchAreas a.web {
   background-color: #D64541;
 }
