@@ -1,7 +1,3 @@
-define(['model/degrees'], function(degrees){
-  return degrees.map(function(data) {
-    return data.graduate.find(function(item){
-      return (item.availableCertificates !== undefined);
-    });
-  });
-});
+define(['model/degrees'], degrees => degrees.map(data => {
+  return data.graduate.find(item => (item.availableCertificates !== undefined));
+}));

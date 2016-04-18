@@ -1,7 +1,4 @@
-define(function(){
-  return $.ajaxAsObservable({
-    url: 'http://www.ist.rit.edu/api/footer'
-  }).map(function(payload) {
-    return payload.data;
-  });
-});
+(function(){
+  const opts = { url: 'http://www.ist.rit.edu/api/footer' };
+  define(() => $.ajaxAsObservable(opts).map(payload => payload.data));
+})();

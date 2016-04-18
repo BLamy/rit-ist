@@ -1,5 +1,1 @@
-define(['model/degrees'], function(degrees){
-  return degrees.map(function(data) {
-    return data.undergraduate;
-  });
-});
+define(['model/degrees'], degrees => degrees.map(data => data.undergraduate));

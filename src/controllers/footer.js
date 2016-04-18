@@ -9,9 +9,9 @@ define(['model/footer'], model => {
       <a href="${payload.social.facebook}">facebook</a>
       <div id="FooterDark">
         `;
-        
-        html += payload.quickLinks.reduce((previous, current) => {
 
+        html += payload.quickLinks.reduce((previous, current) => {
+          
         }, '');
 
     html +=`

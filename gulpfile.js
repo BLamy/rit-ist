@@ -3,7 +3,7 @@ var requirejsOptimize = require('gulp-requirejs-optimize');
 var babel = require('gulp-babel');
 
 gulp.task('vulcanize', () => {
-	return gulp.src('dist/app.js')
+	return gulp.src('compatibility/**/*.js')
 		.pipe(requirejsOptimize())
 		.pipe(gulp.dest('dist'));
 });
@@ -14,7 +14,7 @@ gulp.task('transpile', () => {
   		.pipe(babel({
   			presets: ['es2015']
   		}))
-  		.pipe(gulp.dest('dist'));
+  		.pipe(gulp.dest('compatibility'));
 });
 
-gulp.task('build', ['transpile', 'vulcanize']);
+gulp.task('build', ['vulcanize', 'transpile']);

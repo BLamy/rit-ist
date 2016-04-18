@@ -1,7 +1,3 @@
-define(['model/degrees'], function(degrees){
-  return degrees.map(function(data) {
-    return data.graduate.filter(function(item){
-      return (item.title !== undefined);
-    });
-  });
-});
+define(['model/degrees'], degrees => degrees.map(data => {
+  return data.graduate.filter(item => (item.title !== undefined));
+}));

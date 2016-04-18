@@ -7,6 +7,7 @@ jQuery.ajaxPrefilter(function(options) {
 });
 
 let dependencies = [
+  'util/polyfills',
   'util/EventLogger',
   'controllers/toolbar',
   'controllers/about',

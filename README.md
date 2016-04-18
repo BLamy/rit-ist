@@ -1,7 +1,7 @@
 # rit-ist
 This is a redesign of ist.rit.edu for 340 - Client Programming.
 
-The goal of this project is to come up with a sane architecture consuming `www.ist.rit.edu/api/`. The only requirement is the Project must use jQuery and 3 plugins.
+The goal of this project is to come up with a sane architecture for consuming `www.ist.rit.edu/api/`. The only requirement is the Project must use jQuery and 3 plugins.
 
 For my plugins I have chosen to use:
 - [RxJS-JQuery](https://github.com/Reactive-Extensions/rxjs-jquery) - Adds reactive bindings to jquery. Allow me to wrap jQueries HTTP request and get back an Observable rather than a promise.

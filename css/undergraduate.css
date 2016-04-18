@@ -7,7 +7,7 @@
   display: flex;
   flex-wrap: nowrap;
 }
-#Undergraduate>div>div {
+#Undergraduate>div>a {
   width: calc(33% - 50px);
   padding: 25px;
   margin: 25px;
