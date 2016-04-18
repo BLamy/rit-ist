@@ -5,9 +5,13 @@ This redesign uses `www.ist.rit.edu/api/` to get data.
 
 
 # Build dependencies
-1) Node
-2) bower
-3) gulp
+1) [Node](http://nodejs.org)
+
+2) [bower](http://bower.io)
+`sudo npm install -g bower`
+
+3) [gulp](http://gulpjs.com)
+`sudo npm install -g gulp`
 
 # Building Project
 
@@ -19,7 +23,7 @@ This redesign uses `www.ist.rit.edu/api/` to get data.
 
 4) `bower install`
 
-5) `gulp server`
+5) `gulp serve`
 
 ## ES2015
 The following ES2015 features will be used:
