@@ -1,16 +1,24 @@
 #ResearchAreas,
 #ResearchFaculty {
   text-align: center;
+  padding: 40px 0;
 }
 #ResearchFaculty>div,
 #ResearchAreas>div {
+  margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
   font-weight: bold;
-  padding: 40px 0;
   margin-left: 5%;
 }
-#ResearchFaculty>div>div,
+#ResearchFaculty>div>div {
+  height: 12.2vw;
+  width: 12.2vw;
+}
+#ResearchFaculty img {
+  width: 100%;
+  height: 100%;
+}
 #ResearchAreas>div>div {
   height: 13.2vw;
   width: 13.2vw;
