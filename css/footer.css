@@ -5,5 +5,13 @@
 #FooterDark {
   background-color: #303030;
   width: 100%;
-  height: 500px;
+  height: 320px;
+  padding: 40px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+#FooterDark >p {
+  padding-top: 50px;
+  color: white;
 }

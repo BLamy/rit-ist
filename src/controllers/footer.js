@@ -10,11 +10,18 @@ define(['model/footer'], model => {
       <div id="FooterDark">
         `;
 
+        //--------------------
+        // Quicklinks
         html += payload.quickLinks.reduce((previous, current) => {
-          
-        }, '');
+          return previous + `
+            <li><a href='${current.href}'>${current.title}</a></li>
+          `
+        }, '<ul>') + '</ul>';
+        //--------------------
+        // Quicklinks
 
     html +=`
+        ${payload.copyright.html}
       </div>
     `;
     render.html(html);
