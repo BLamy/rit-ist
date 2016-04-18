@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>IST Department at RIT</title>
   <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" media="screen" charset="utf-8">
+  <link rel="stylesheet" href="bower_components/Materialize/dist/css/materialize.css" media="screen" charset="utf-8">
   <link rel="stylesheet" href="css/reset.css" media="screen" charset="utf-8">
   <link rel="stylesheet" href="css/global.css" media="screen" charset="utf-8">
   <link rel="stylesheet" href="css/material-shadow.css" media="screen" charset="utf-8">
@@ -17,17 +18,23 @@
   <link rel="stylesheet" href="css/graduate.css" media="screen" charset="utf-8">
   <link rel="stylesheet" href="css/undergraduate.css" media="screen" charset="utf-8">
   <link rel="stylesheet" href="css/minors.css" media="screen" charset="utf-8">
+  <link rel="stylesheet" href="css/lightbox.css" media="screen" charset="utf-8">
   <link rel="stylesheet" href="css/people.css" media="screen" charset="utf-8">
   <link rel="stylesheet" href="css/research.css" media="screen" charset="utf-8">
   <link rel="stylesheet" href="css/footer.css" media="screen" charset="utf-8">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,300' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto%20Mono:400,500,700,300' rel='stylesheet' type='text/css'>
 
 </head>
 
 <body>
+  <div id="LightBox"></div>
+
 
   <header id="Header">
+
+
     <svg id="MenuButton" fill="rgba(255, 255, 255, .70)" viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none" />
       <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
@@ -39,10 +46,14 @@
       <path d="M0 0h24v24H0z" fill="none" />
     </svg>
 
-    <svg id="MoreButton" fill="rgba(255, 255, 255, .70)" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 0h24v24H0z" fill="none" />
-      <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-    </svg>
+    <ul id="dropdown2" class="dropdown-content">
+      <li><a href="#!">News</a></li>
+      <li><a href="#!">Contact</a></li>
+      <li><a href="#!">Apply</a></li>
+      <li><a href="#!">Alternative Experience</a></li>
+    </ul>
+    <i data-activates="dropdown2" class="dropdown-button material-icons">more_vert</i>
+
   </header>
 
   <section id="Hero">
@@ -50,7 +61,6 @@
     <div class="orange-tint"></div>
     <h1>Information Sciences &amp;<br />Technologies @ RIT</h1>
   </section>
-
   <section id="About" class='shadow2dp'></section>
 
   <section id="Undergraduate"></section>
@@ -92,6 +102,7 @@
 
   <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
   <script type="text/javascript" src="bower_components/rxjs/dist/rx.lite.js"></script>
+  <script type="text/javascript" src="bower_components/Materialize/dist/js/materialize.js"></script>
   <script type="text/javascript" src="bower_components/rxjs-jquery/rx.jquery.js"></script>
   <script data-main="src/app" src="bower_components/requirejs/require.js"></script>
 

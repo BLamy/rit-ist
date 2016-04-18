@@ -5,6 +5,8 @@ The goal of this project is to come up with a sane architecture for consuming `w
 
 For my plugins I have chosen to use:
 - [RxJS-JQuery](https://github.com/Reactive-Extensions/rxjs-jquery) - Adds reactive bindings to jquery. Allow me to wrap jQueries HTTP request and get back an Observable rather than a promise.
+- [jQuery Tables](https://datatables.net/) - Used in coop/professional tables
+- [Materializecss](http://materializecss.com/icons.html) - jQuery based CSS framework for Material Design.
 
 Aside from that I have optionally selected:
 - [Require.js]() - Adds sane module loading. I chose AMD vs es2015 modules since es6 modules are not supported in any browser natively. The goal is to only use es2015 features if they are supported natively in the latest browsers, and produce transpiled code which is easily mapped to the source (only use features which are light syntactic sugar).
