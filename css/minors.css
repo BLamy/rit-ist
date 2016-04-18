@@ -7,7 +7,8 @@
   display: flex;
   flex-wrap: wrap;
 }
-#Minors>div>div {
+#Minors>div>a {
+  display: block;
   border-radius: 2px;
   position: relative;
   text-align: center;
@@ -16,12 +17,12 @@
   margin: 20px;
   color: white;
 }
-#Minors>div>div:after {
+#Minors>div>a:after {
   content: '\0020';
   display: block;
   margin-top: 56.25%; /* 16:9 aspect */
 }
-#Minors>div>div>* {
+#Minors>div>a>* {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -36,48 +37,48 @@
 #Minors i.DBDDI-MN:before {
   content: "\f1c0";  /*fa-database*/
 }
-#Minors div.DBDDI-MN {
+#Minors a.DBDDI-MN {
   background-color: #F5D76E;
 }
 #Minors i.GIS-MN:before {
   content: "\f041";  /*fa-map-marker*/
 }
-#Minors div.GIS-MN {
+#Minors a.GIS-MN {
   background-color: #22A7F0;
 }
 #Minors i.MEDINFO-MN:before {
   content: "\f0fa";  /*fa-medkit*/
 }
-#Minors div.MEDINFO-MN {
+#Minors a.MEDINFO-MN {
   background-color: #89D47D;
 }
 #Minors i.MDDEV-MN:before {
   content: "\f121";/*fa-code*/
 }
-#Minors div.MDDEV-MN {
+#Minors a.MDDEV-MN {
   background-color: #6C7A89;
 }
 #Minors i.MDEV-MN:before {
   content: "\f10b";/*fa-mobile*/
 }
-#Minors div.MDEV-MN {
+#Minors a.MDEV-MN {
   background-color: #F27935;
 }
 #Minors i.NETSYS-MN:before {
   content: "\f0e8";/*fa-sitemap*/
 }
-#Minors div.NETSYS-MN {
+#Minors a.NETSYS-MN {
   background-color: #EB974E;
 }
 #Minors i.WEBDD-MN:before {
   content: "\f13b";/*fa-html5*/
 }
-#Minors div.WEBDD-MN {
+#Minors a.WEBDD-MN {
   background-color: #4ECDC4;
 }
 #Minors i.WEBD-MN:before {
   content: "\f247";/*fa-object-group*/
 }
-#Minors div.WEBD-MN {
+#Minors a.WEBD-MN {
   background-color: #A9ACAE;
 }
