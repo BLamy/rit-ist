@@ -13,7 +13,7 @@ define(['model/employment'], model => {
     html += `
       <h3>${employment.title}</h3>
       <p>${employment.description}</p>
-    `
+    `;
     //--------------------------
     // Employment stats
     const stats = payload.degreeStatistics.statistics;
@@ -25,8 +25,8 @@ define(['model/employment'], model => {
             <p>${current.description}</p>
           </div>
         </div>
-      `
-    }, '') + '</div>'
+      `;
+    }, '') + '</div>';
 
 
     //--------------------------
@@ -35,7 +35,7 @@ define(['model/employment'], model => {
     html += `
       <h3>${coop.title}</h3>
       <p>${coop.description}</p>
-    `
+    `;
 
     //--------------------------
     // Employers
@@ -44,10 +44,10 @@ define(['model/employment'], model => {
     html += '<div >' + payload.employers.employerNames.reduce((previous, current) => {
       return previous + `
         <span>
-        ${current}
+          ${current}
         </span> -
-      `
-    }, '-') + '</div>'
+      `;
+    }, '-') + '</div>';
 
     //--------------------------
     // Careers
@@ -58,8 +58,8 @@ define(['model/employment'], model => {
         <span>
           ${current}
         </span> -
-      `
-    }, '-') + '</div>'
+      `;
+    }, '-') + '</div>';
     render.html(html);
   });
 

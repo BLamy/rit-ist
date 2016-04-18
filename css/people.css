@@ -2,6 +2,7 @@
   text-align: center;
   background-color: #424242;
   color: white;
+  padding: 40px 0;
 }
 #People .faculty {
   display: flex;

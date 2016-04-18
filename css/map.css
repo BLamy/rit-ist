@@ -1,0 +1,12 @@
+#Map {
+  text-align: center;
+  padding: 40px 0;
+}
+#Map iframe {
+  height: 70vh;
+  border: none;
+  margin: 0 auto;
+  width: 80%;
+  margin-left: 5%;
+  margin-top: 40px;
+}
