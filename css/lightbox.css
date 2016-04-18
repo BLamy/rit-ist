@@ -4,5 +4,21 @@
   z-index: 20;
   width: 100%;
   height: 100%;
+}
+#LightBox div.lightbox-modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0 , 0, .3);
+}
+#LightBox div.inner {
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  width: 80%;
+  min-height: 200px;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transition: translateY(-50%);
 }
