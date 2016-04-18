@@ -1,1 +1,36 @@
-#Resources
+#Resources {
+  display: flex;
+  flex-wrap: wrap;
+}
+#Resources>div {
+  width: calc(100% / 3 - 20px);
+  height: 140px;
+  font-size: 20px;
+  text-align: center;
+  margin: 10px;
+  line-height: 140px;
+  color: white;
+}
+#Resources>div:first-child {
+    background: #D64541
+}
+
+#Resources>div:nth-child(2) {
+    background: #2C3E50
+}
+
+#Resources>div:nth-child(3) {
+    background: #68C3A3
+}
+
+#Resources>div:nth-child(4) {
+    background: #F4B350
+}
+
+#Resources>div:nth-child(5) {
+  background-color: #A9ACAE;
+}
+
+#Resources>div:nth-child(6) {
+  background-color: #EB974E;
+}
