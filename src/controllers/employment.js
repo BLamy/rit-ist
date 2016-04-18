@@ -14,20 +14,20 @@ define(['model/employment'], model => {
       <h3>${employment.title}</h3>
       <p>${employment.description}</p>
     `;
+
     //--------------------------
     // Employment stats
     const stats = payload.degreeStatistics.statistics;
-    html += '<div id="degreeStatistics">' + stats.reduce((previous, current) => {
+    html += stats.reduce((previous, current) => {
       return previous + `
         <div>
           <div class="stat-wrapper">
-            <h2>${current.value}</h2>
+            <h4>${current.value}</h4>
             <p>${current.description}</p>
           </div>
         </div>
       `;
-    }, '') + '</div>';
-
+    }, '<div id="degreeStatistics">') + '</div>';
 
     //--------------------------
     // COOP
@@ -39,27 +39,27 @@ define(['model/employment'], model => {
 
     //--------------------------
     // Employers
-    html += `<h2>${payload.employers.title}</h2>`;
+    html += `<h4>${payload.employers.title}</h4>`;
 
-    html += '<div >' + payload.employers.employerNames.reduce((previous, current) => {
+    html +=  payload.employers.employerNames.reduce((previous, current) => {
       return previous + `
         <span>
           ${current}
         </span> -
       `;
-    }, '-') + '</div>';
+    }, '<div>-') + '</div>';
 
     //--------------------------
     // Careers
-    html += `<h2>${payload.careers.title}</h2>`;
+    html += `<h4>${payload.careers.title}</h4>`;
 
-    html += '<div>' + payload.careers.careerNames.reduce((previous, current) => {
+    html += payload.careers.careerNames.reduce((previous, current) => {
       return previous + `
         <span>
           ${current}
         </span> -
       `;
-    }, '-') + '</div>';
+    }, '<div>-') + '</div>';
     render.html(html);
   });
 

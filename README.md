@@ -11,6 +11,7 @@ For my plugins I have chosen to use:
 Aside from that I have optionally selected:
 - [Require.js]() - Adds sane module loading. I chose AMD vs es2015 modules since es6 modules are not supported in any browser natively. The goal is to only use es2015 features if they are supported natively in the latest browsers, and produce transpiled code which is easily mapped to the source (only use features which are light syntactic sugar).
 - [Gulp]() - Build process. Will optimize code to run IE 9+;
+- [Font Awesome]() - To reuse all the same icons as the current website.
 
 # Build dependencies
 1) [Node](http://nodejs.org)

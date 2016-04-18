@@ -44,6 +44,9 @@
 #Employment #degreeStatistics .stat-wrapper {
   width: 100%;
 }
+#Employment #degreeStatistics .stat-wrapper>h2 {
+  font-size: 20px;
+}
 #Employment #degreeStatistics .stat-wrapper>p {
   width: 80%;
   margin: 0 auto;
