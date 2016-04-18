@@ -1,6 +1,16 @@
-#GraduateDegrees {
+#Graduate{
+  text-align: center;
+}
+#GraduateDegrees>div {
   display: flex;
   flex-wrap: nowrap;
+  text-align: center;
+}
+
+#GraduateDegrees>div>div {
+  width: calc(33% - 50px);
+  padding: 25px;
+  margin: 25px;
 }
 #Graduate .ist:before {
   content: "\f11c";/*fa-keyboard-o*/
@@ -14,9 +24,11 @@
   content: "\f233";/*fa-server*/
   color: #00a2ff;
 }
-#Graduate #GraduateCertifications:nth-child(0):before {
-  content: "\f11c";
+#Graduate #GraduateCertifications i:first-of-type:before {
+  content: "\f13b";/*fa-html5*/
+  color: #FFA44F;
 }
-#Graduate #GraduateCertifications:nth-child(n+1):before {
-  content: "\f11c";
+#Graduate #GraduateCertifications i:last-of-type:before {
+  content: "\f0e8";/*fa-sitemap*/
+  color:#7454CC;
 }
