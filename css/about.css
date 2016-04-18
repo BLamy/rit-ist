@@ -1,0 +1,40 @@
+#About {
+  position: relative;
+  top: -100px;
+  background: white;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 2px;
+  padding: 20px;
+}
+#About hr {
+  width: 50%;
+  margin: 20px auto;
+}
+#About>.container {}
+#AboutTitle {
+  text-align: center;
+  opacity: .87;
+}
+#About .quoteMark {
+  font-size: 60px;
+  font-family: Calibri;
+  font-style: italic;
+  float: left;
+  color: #f36E21;
+}
+#About #AboutDescription {
+  opacity: .54;
+}
+#About blockquote {
+  font-size: 12px;
+  opacity: .54;
+}
+#About cite {
+  text-align: center;
+  width: 100%;
+  display: block;
+  font-size: 12px;
+  color: rgb(243, 110, 33);
+  opacity: .54;
+}

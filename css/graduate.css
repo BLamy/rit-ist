@@ -1,0 +1,22 @@
+#GraduateDegrees {
+  display: flex;
+  flex-wrap: nowrap;
+}
+#Graduate .ist:before {
+  content: "\f11c";/*fa-keyboard-o*/
+  color: #fe2a70;
+}
+#Graduate .hci:before {
+  content: "\f24a";/*fa-sticky-note-o*/
+  color: #f8b64d;
+}
+#Graduate .nsa:before {
+  content: "\f233";/*fa-server*/
+  color: #00a2ff;
+}
+#Graduate #GraduateCertifications:nth-child(0):before {
+  content: "\f11c";
+}
+#Graduate #GraduateCertifications:nth-child(n+1):before {
+  content: "\f11c";
+}

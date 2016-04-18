@@ -1,0 +1,37 @@
+#Header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  height: 64px;
+  line-height: 64px;
+  width: calc(100% - 20px);
+  background-color: #f36E21;
+  padding: 0 10px;
+  transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 10;
+}
+@media (max-width: 768px) {
+  #Header {
+    height: 56px !important;
+    line-height: 56px;
+  }
+}
+#Header>svg {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 10px;
+}
+#Header #PageTitle {
+  width: 100%;
+  padding: 0 10px;
+  color: white;
+  letter-spacing: 3px;
+  font-family: Georgia;
+  line-height: inherit;
+}
+
+#Header #PageTitle .dot {
+  font-size: 10px;
+  vertical-align: top;
+}

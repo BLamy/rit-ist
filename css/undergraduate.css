@@ -1,0 +1,16 @@
+#Undergraduate {
+  display: flex;
+  flex-wrap: nowrap;
+}
+#Undergraduate .wmc:before {
+  content: "\f0ac";/*fa-globe*/
+  color: #fe2a70;
+}
+#Undergraduate .hcc:before {
+  content: "\f256";/*fa-hand-stop-o*/
+  color: #f8b64d;
+}
+#Undergraduate .cit:before {
+  content: "\f109";/*fa-laptop*/
+  color: #00a2ff;
+}

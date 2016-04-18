@@ -1,0 +1,24 @@
+{
+  "name": "client-project2",
+  "authors": [
+    "Brett Lamy <bel423@me.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "rxjs-jquery": "~1.1.7",
+    "jquery": "~2.2.3",
+    "requirejs": "~2.2.0",
+    "font-awesome": "fontawesome#~4.6.1"
+  }
+}

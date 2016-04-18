@@ -1,0 +1,57 @@
+#Minors {
+  display: flex;
+  flex-wrap: wrap;
+}
+#Minors>div {
+  width: 23%;
+  margin: 1%;
+  color: white;
+}
+#Minors i.DBDDI-MN:before {
+  content: "\f1c0";  /*fa-database*/
+}
+#Minors div.DBDDI-MN {
+  background-color: #F5D76E;
+}
+#Minors i.GIS-MN:before {
+  content: "\f041";  /*fa-map-marker*/
+}
+#Minors div.GIS-MN {
+  background-color: #22A7F0;
+}
+#Minors i.MEDINFO-MN:before {
+  content: "\f0fa";  /*fa-medkit*/
+}
+#Minors div.MEDINFO-MN {
+  background-color: #89D47D;
+}
+#Minors i.MDDEV-MN:before {
+  content: "\f121";/*fa-code*/
+}
+#Minors div.MDDEV-MN {
+  background-color: #6C7A89;
+}
+#Minors i.MDEV-MN:before {
+  content: "\f10b";/*fa-mobile*/
+}
+#Minors div.MDEV-MN {
+  background-color: #F27935;
+}
+#Minors i.NETSYS-MN:before {
+  content: "\f0e8";/*fa-sitemap*/
+}
+#Minors div.NETSYS-MN {
+  background-color: #EB974E;
+}
+#Minors i.WEBDD-MN:before {
+  content: "\f13b";/*fa-html5*/
+}
+#Minors div.WEBDD-MN {
+  background-color: #4ECDC4;
+}
+#Minors i.WEBD-MN:before {
+  content: "\f247";/*fa-object-group*/
+}
+#Minors div.WEBD-MN {
+  background-color: #A9ACAE;
+}

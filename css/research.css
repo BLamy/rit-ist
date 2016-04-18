@@ -1,0 +1,82 @@
+#ResearchAreas {
+  display: flex;
+  flex-wrap: wrap;
+}
+#ResearchAreas>div {
+  width: 23%;
+  margin: 1%;
+  color: white;
+  border-radius: 100%;
+}
+#ResearchAreas i.analytics:before {
+  content: "\f260";/*fa-gg*/
+}
+#ResearchAreas div.analytics {
+  background-color: #F4B350;
+}
+#ResearchAreas i.database:before {
+  content: "\f1c0";/*fa-database*/
+}
+#ResearchAreas div.database {
+  background-color: #22313F;
+}
+#ResearchAreas i.education:before {
+  content: "\f044";/*fa-pencil-square-o*/
+}
+#ResearchAreas div.education {
+  background-color: #F64747;
+}
+#ResearchAreas i.geo:before {
+  content: "\f041";/*fa-map-marker*/
+}
+#ResearchAreas div.geo {
+  background: #E08283
+}
+#ResearchAreas i.hci:before {
+  content: "\f007";/*fa-user*/
+}
+#ResearchAreas div.hci {
+  background: #3498DB
+}
+#ResearchAreas i.health-informatics:before {
+  content: "\f21e";/*fa-heartbeat*/
+}
+#ResearchAreas div.health-informatics {
+  background: #019875
+}
+#ResearchAreas i.mobile:before {
+  content: "\f10b";/*fa-mobile*/
+}
+#ResearchAreas div.mobile {
+  background: #6C7A89
+}
+#ResearchAreas i.networking:before {
+  content: "\f0e8";/*fa-sitemap*/
+}
+#ResearchAreas div.networking {
+  background: #68C3A3
+}
+#ResearchAreas i.programming:before {
+  content: "\f016";/*fa-file-o*/
+}
+#ResearchAreas div.programming {
+  background-color: #F2784B;
+}
+#ResearchAreas i.system-administration:before {
+  content: "\f233";/*fa-server*/
+}
+#ResearchAreas div.system-administration {
+  background-color: #3A539B;
+}
+#ResearchAreas i.ubiquitous-computing:before {
+  content: "\f152";/*fa-caret-square-o-right*/
+}
+#ResearchAreas div.ubiquitous-computing {
+  background-color: #34495E;
+}
+#ResearchAreas i.web:before {
+  content: "\f247";/*fa-object-group*/
+}
+#ResearchAreas div.web {
+  background-color: #D64541;
+}
