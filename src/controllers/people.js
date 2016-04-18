@@ -1,8 +1,8 @@
 define(['model/people'], model => {
-  var render = $('#People');
+  const render = $('#People');
 
   model.subscribe(payload => {
-    var html = `
+    let html = `
       <h2 class="display1">${payload.title}</h2>
       <p>${payload.subTitle}</p>
     `;

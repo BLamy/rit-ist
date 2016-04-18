@@ -2,7 +2,7 @@
    * About controller manages the about section
    */
   define(['model/about'], model => {
-    var host = $('#About');
+    const host = $('#About');
 
     model.subscribe(data => {
       host.html(`

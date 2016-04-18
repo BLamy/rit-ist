@@ -1,8 +1,8 @@
-define(['model/minors'], function(model) {
-  var minors = $('#Minors');
+define(['model/minors'], model => {
+  const minors = $('#Minors');
 
-  model.subscribe(function(payload) {
-    var html = payload.reduce(function(prev, curr) {
+  model.subscribe(payload => {
+    let html = payload.reduce((prev, curr) => {
       return prev + `
         <div class='${curr.name} hoverShadow3dp'>
           <div class='minor-wrapper'>

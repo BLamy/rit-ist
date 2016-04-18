@@ -2,10 +2,9 @@
    *
    */
   define(['model/graduateDegrees', 'model/graduateCertifications'], (Degree, Certificate) => {
-
+    const graduateDegrees = $('#GraduateDegrees');
     Degree.subscribe(payload => {
-      var render = $('#GraduateDegrees');
-      var html = `<h3 class='display1'>Our Graduate Degrees</h3>`;
+      let html = `<h3 class='display1'>Our Graduate Degrees</h3>`;
 
       html += '<div>' + payload.reduce((prev, curr) => {
         return prev + `
@@ -16,13 +15,13 @@
             </div>
           `;
       }, '') + '</div>';
-      render.html(html);
+      graduateDegrees.html(html);
     });
 
+    const graduateCertifications = $('#GraduateCertifications');
     Certificate.subscribe(payload => {
-      var render = $('#GraduateCertifications');
 
-      var html = payload.availableCertificates.reduce((prev, curr) => {
+      let html = payload.availableCertificates.reduce((prev, curr) => {
 
         return prev + `
           <i class="fa fa-5x"></i>
@@ -30,6 +29,6 @@
         `;
       }, '');
 
-      render.html(html);
+      graduateCertifications.html(html);
     });
   });

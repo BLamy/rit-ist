@@ -1,7 +1,8 @@
-#ResearchAreas {
+#ResearchAreas,
+#ResearchFaculty {
   text-align: center;
 }
-
+#ResearchFaculty>div,
 #ResearchAreas>div {
   display: flex;
   flex-wrap: wrap;
@@ -9,6 +10,7 @@
   padding: 40px 0;
   margin-left: 5%;
 }
+#ResearchFaculty>div>div,
 #ResearchAreas>div>div {
   height: 13.2vw;
   width: 13.2vw;

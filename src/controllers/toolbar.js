@@ -15,9 +15,9 @@ define(['util/EventLogger'], logger => {
     logger.log('MoreButton Clicked', e);
   });
 
-  var header = $('header');
+  const header = $('header');
   $(window).scroll(e => {
-    var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+    let scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
     if (scrollTop > 0) {
       header.addClass('shadow3dp');
     } else {

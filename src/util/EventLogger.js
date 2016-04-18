@@ -3,8 +3,8 @@
  * @param {JQuery Object} - Alternative output
  */
 define(function() {
-  var logger = logger || $("#EventLog");
-  var logs = [];
+  let logger = $("#EventLog");
+  let logs = [];
 
   /**
    * Will push the event to the event log

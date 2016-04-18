@@ -2,21 +2,21 @@
 *
 */
 define(['model/employment'], model => {
-  var render = $('#Employment');
+  const render = $('#Employment');
 
   model.subscribe(payload => {
-    var html = `<h2>${payload.introduction.title}</h2>`;
+    let html = `<h2>${payload.introduction.title}</h2>`;
 
     //--------------------------
     // Employment
-    var employment = payload.introduction.content[0];
+    const employment = payload.introduction.content[0];
     html += `
       <h3>${employment.title}</h3>
       <p>${employment.description}</p>
     `
     //--------------------------
     // Employment stats
-    let stats = payload.degreeStatistics.statistics;
+    const stats = payload.degreeStatistics.statistics;
     html += '<div id="degreeStatistics">' + stats.reduce((previous, current) => {
       return previous + `
         <div>
@@ -31,7 +31,7 @@ define(['model/employment'], model => {
 
     //--------------------------
     // COOP
-    var coop = payload.introduction.content[1];
+    const coop = payload.introduction.content[1];
     html += `
       <h3>${coop.title}</h3>
       <p>${coop.description}</p>

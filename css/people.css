@@ -1,5 +1,7 @@
 #People {
   text-align: center;
+  background-color: #424242;
+  color: white;
 }
 #People .faculty {
   display: flex;
@@ -8,5 +10,5 @@
 #People .faculty>div {
   width: calc(23% - 4px);
   margin: 1%;
-  border: 1px solid black;
+  border: 1px solid white;
 }
