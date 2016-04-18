@@ -1,6 +1,12 @@
 section:nth-child(even) {
-    background: #f1f1f1;
+    background: white;
 }
 section:nth-child(odd) {
-    background: white;
+    background: #f1f1f1;
+}
+h3 {
+  font-size: 30px;
+}
+h4 {
+  font-size: 20px;
 }

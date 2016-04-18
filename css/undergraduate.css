@@ -1,7 +1,6 @@
 #Undergraduate {
   text-align: center;
-  margin: 20px 0;
-  padding: 20px 0;
+  padding: 40px 0;
 }
 #Undergraduate>div {
   display: flex;

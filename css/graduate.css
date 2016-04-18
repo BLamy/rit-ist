@@ -1,5 +1,6 @@
 #Graduate{
   text-align: center;
+  padding: 40px 0;
 }
 #GraduateDegrees>div {
   display: flex;
