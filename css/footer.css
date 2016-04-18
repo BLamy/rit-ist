@@ -1,0 +1,9 @@
+#Footer {
+  text-align: center;
+}
+
+#FooterDark {
+  background-color: #303030;
+  width: 100%;
+  height: 500px;
+}
