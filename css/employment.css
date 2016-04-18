@@ -1,0 +1,50 @@
+#Employment {
+  padding: 40px 0;
+  color: white;
+  background: #424242;
+  text-align: center;
+}
+#Employment #degreeStatistics {
+  display: flex;
+}
+#Employment #degreeStatistics>div:first-child {
+    background: #D64541
+}
+
+#Employment #degreeStatistics>div:nth-child(2) {
+    background: #2C3E50
+}
+
+#Employment #degreeStatistics>div:nth-child(3) {
+    background: #68C3A3
+}
+
+#Employment #degreeStatistics>div:nth-child(4) {
+    background: #F4B350
+}
+#Employment #degreeStatistics>div {
+  border-radius: 2px;
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  width: calc(25% - 40px);
+  margin: 20px;
+  color: white;
+}
+#Employment #degreeStatistics>div:after {
+  content: '\0020';
+  display: block;
+  margin-top: 56.25%; /* 16:9 aspect */
+}
+#Employment #degreeStatistics>div>* {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#Employment #degreeStatistics .stat-wrapper {
+  width: 100%;
+}
+#Employment #degreeStatistics .stat-wrapper>p {
+  width: 80%;
+  margin: 0 auto;
+}

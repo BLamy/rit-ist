@@ -20,8 +20,10 @@ define(['model/employment'], model => {
     html += '<div id="degreeStatistics">' + stats.reduce((previous, current) => {
       return previous + `
         <div>
-          <h2>${current.value}</h2>
-          <p>${current.description}</p>
+          <div class="stat-wrapper">
+            <h2>${current.value}</h2>
+            <p>${current.description}</p>
+          </div>
         </div>
       `
     }, '') + '</div>'
@@ -29,7 +31,7 @@ define(['model/employment'], model => {
 
     //--------------------------
     // COOP
-    var coop = payload.introduction.content[0];
+    var coop = payload.introduction.content[1];
     html += `
       <h3>${coop.title}</h3>
       <p>${coop.description}</p>
@@ -43,9 +45,9 @@ define(['model/employment'], model => {
       return previous + `
         <span>
         ${current}
-        </span>
+        </span> -
       `
-    }, '') + '</div>'
+    }, '-') + '</div>'
 
     //--------------------------
     // Careers
@@ -55,9 +57,9 @@ define(['model/employment'], model => {
       return previous + `
         <span>
           ${current}
-        </span>
+        </span> -
       `
-    }, '') + '</div>'
+    }, '-') + '</div>'
     render.html(html);
   });
 
