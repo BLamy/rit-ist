@@ -14,6 +14,8 @@ Aside from that I have optionally selected:
 - [Font Awesome]() - To reuse all the same icons as the current website.
 
 # Build dependencies
+> Building is only required if you want to run this project in an out of date browser
+
 1) [Node](http://nodejs.org)
 
 2) [bower](http://bower.io)
@@ -23,6 +25,7 @@ Aside from that I have optionally selected:
 `sudo npm install -g gulp`
 
 # Building Project
+> Building is only required if you want to run this project in an out of date browser
 
 1) `git clone https://github.com/BLamy/rit-ist.git`
 
@@ -61,21 +64,20 @@ A gulp file is provided for building the application.
 
 ## Known Issues
 - Click handlers should not be inside inside of the observers subscribe block. event streams should be merged to be more RX-like.
-- Micro optimization - Employment model should be pulled in using individual request omly loading the ones that are needed immediately.
+- Micro optimization - Employment model should be pulled in using individual request only loading the ones that are needed immediately.
 
 
 # todo
-- [ ] Toolbar
+- [x] Toolbar
 - [x] hero
 - [x] About
 - [x] Degrees
 - [x] Minors
-- [ ] Employment
+- [x] Employment
 - [x] Map
 - [ ] Gulp Serve
-- [ ] People
-- [ ] Research
+- [x] People
+- [x] Research
 - [ ] Resources
 - [ ] News
-- [ ] Footer
-- [ ] Courses
+- [x] Footer
