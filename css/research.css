@@ -1,12 +1,39 @@
 #ResearchAreas {
+  text-align: center;
+}
+
+#ResearchAreas>div {
   display: flex;
   flex-wrap: wrap;
+  font-weight: bold;
+  padding: 40px 0;
+  margin-left: 5%;
 }
-#ResearchAreas>div {
-  width: 23%;
+#ResearchAreas>div>div {
+  height: 13.2vw;
+  width: 13.2vw;
   margin: 1%;
   color: white;
   border-radius: 100%;
+}
+#ResearchAreas .research-wrapper {
+  width: 100%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#ResearchAreas .research-wrapper>p {
+  width: 80%;
+  margin: 0 auto;
+}
+#ResearchAreas .research-wrapper>i {
+  margin-top:10px;
+}
+
+#ResearchAreas>div>div:after {
+  content: '\0020';
+  display: block;
+  margin-top: 56.25%; /* 16:9 aspect */
 }
 #ResearchAreas i.analytics:before {
   content: "\f260";/*fa-gg*/

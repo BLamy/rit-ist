@@ -5,14 +5,22 @@ define(['model/research'], model => {
   const researchFaculty = $('#ResearchFaculty');
 
   byInterest.subscribe(payload => {
-    let html = payload.reduce((previous, current) => {
+    var html = `
+      <h2 class="display1">Faculty Research: Areas of Interest</h2>
+      <p>Click the area you’re interested in to explore our faculty publications</p>
+    `;
+
+
+    html += '<div>' + payload.reduce((previous, current) => {
       let tagClass = current.areaName.replace(' ', '-').toLowerCase();
       return previous + `
         <div class="${tagClass}">
-          <p>${current.areaName}</p>
-          <i class='fa ${tagClass} fa-2x'>${current.areaName}</i>
+          <div class='research-wrapper'>
+            <p>${current.areaName}</p>
+            <i class='fa ${tagClass} fa-2x'></i>
+          </div>
         </div>`;
-    }, '');
+    }, '') + '</div>';
 
     researchAreas.html(html);
   });

@@ -1,3 +1,6 @@
+#People {
+  text-align: center;
+}
 #People .faculty {
   display: flex;
   flex-wrap:wrap;
@@ -6,9 +9,4 @@
   width: calc(23% - 4px);
   margin: 1%;
   border: 1px solid black;
-}
-#People .faculty>div:after {
-  content: '\0020';
-  display: block;
-  margin-top: 56.25%; /* 16:9 aspect */
 }

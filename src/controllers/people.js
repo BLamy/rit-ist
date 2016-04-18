@@ -3,7 +3,7 @@ define(['model/people'], model => {
 
   model.subscribe(payload => {
     var html = `
-      <h2>${payload.title}</h2>
+      <h2 class="display1">${payload.title}</h2>
       <p>${payload.subTitle}</p>
     `;
 
