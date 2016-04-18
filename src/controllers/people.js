@@ -3,8 +3,8 @@ define(['model/people', 'util/lightbox'], (model, lightbox) => {
 
   model.subscribe(payload => {
     let html = `
-      <h2 class="display1">${payload.title}</h2>
-      <p>${payload.subTitle}</p>
+      <h2 class="display1">$Our People</h2>
+      <p>To view more about our faculty and staff, click below.</p>
     `;
 
     html += payload.faculty.reduce((prev, curr) => {
