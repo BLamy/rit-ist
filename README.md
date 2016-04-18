@@ -1,8 +1,14 @@
 # rit-ist
 This is a redesign of ist.rit.edu for 340 - Client Programming.
 
-This redesign uses `www.ist.rit.edu/api/` to get data.
+The goal of this project is to come up with a sane architecture consuming `www.ist.rit.edu/api/`. The only requirement is the Project must use jQuery and 3 plugins.
 
+For my plugins I have chosen to use:
+- [RxJS-JQuery](https://github.com/Reactive-Extensions/rxjs-jquery) - Adds reactive bindings to jquery. Allow me to wrap jQueries HTTP request and get back an Observable rather than a promise.
+
+Aside from that I have optionally selected:
+- [Require.js]() - Adds sane module loading. I chose AMD vs es2015 modules since es6 modules are not supported in any browser natively. The goal is to only use es2015 features if they are supported natively in the latest browsers, and produce transpiled code which is easily mapped to the source (only use features which are light syntactic sugar).
+- [Gulp]() - Build process. Will optimize code to run IE 9+;
 
 # Build dependencies
 1) [Node](http://nodejs.org)
@@ -30,26 +36,24 @@ The following ES2015 features will be used:
 
 Arrow functions:
 http://caniuse.com/#search=arrow%20functions
+
 Template Literals:
 https://kangax.github.io/compat-table/es6/#test-template_strings
+
 Const Keyword:
 http://caniuse.com/#search=const
+
 Let Keyword:
 http://caniuse.com/#search=let
 
-These features where chosen because they are supported natively in evergreen browsers.
-
-For module loading I chose to implement require.js. I chose AMD vs es2015 modules since es6 modules are not supported in any browser natively. The goal is to only use es2015 features which are supported natively and provide a light syntactic sugar for sane, predictable transpiled code.
+All of these features will work in the latest browsers without any building. For support in browsers older than IE edge you can use gulp to remove the sugar and produce pure es5 code.
 
 
 ## Gulp support
 A gulp file is provided for building the application.
-
-- **`gulp vulcanize`** - Will flatten AMD modules from `compatibility/*` to one `dist app.js` file. For use in production
+- **`gulp vulcanize`** - Will flatten AMD modules from `compatibility/*` to one `dist/app.js` file. For use in production.
 - **`gulp transpile`** - Will take code from `src/**/*.js` and transpile it into `compatibility` directory for testing in old browsers.
 - **`gulp build`** - Will create a distribution build.
-
-
 
 # todo
 - [ ] Toolbar
