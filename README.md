@@ -58,6 +58,12 @@ A gulp file is provided for building the application.
 - **`gulp transpile`** - Will take code from `src/**/*.js` and transpile it into `compatibility` directory for testing in old browsers.
 - **`gulp build`** - Will create a distribution build.
 
+
+## Known Issues
+- Click handlers should not be inside inside of the observers subscribe block. event streams should be merged to be more RX-like.
+- Micro optimization - Employment model should be pulled in using individual request omly loading the ones that are needed immediately.
+
+
 # todo
 - [ ] Toolbar
 - [x] hero

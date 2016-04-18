@@ -10,3 +10,22 @@
   margin-left: 5%;
   margin-top: 40px;
 }
+.employment-tables {
+  display: flex;
+}
+#coop,
+#pet {
+  width: 50%;
+  margin: 20px;
+  height: 150px;
+  line-height: 150px;
+  font-size: 24px;
+  color: white;
+}
+#coop{
+  background-color: #F44336;
+}
+
+#pet {
+  background-color: #2196F3;
+}

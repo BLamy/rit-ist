@@ -18,6 +18,7 @@ let dependencies = [
   'controllers/people',
   'controllers/research',
   'controllers/resources',
+  'controllers/map',
   'controllers/footer'
 ];
 
