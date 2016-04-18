@@ -23,3 +23,12 @@
   width: 100%;
   height: 100%;
 }
+
+#Hero h1 {
+  font-size: 56px;
+  position: relative;
+  top: 40%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: white;
+}
